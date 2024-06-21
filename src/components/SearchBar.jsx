@@ -1,48 +1,27 @@
-// import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useState } from "react";
 import { FaSearch } from "react-icons/fa";
 
 export default function SearchBar() {
-  const navigate = useNavigate();
+  const [query, setQuery] = useState("");
 
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    const form = event.currentTarget;
-
-    const formData = Object.fromEntries(new FormData(form));
-
-    if (formData) {
-      navigate(`/search/${formData.search}`);
-    }
-
-    form.reset();
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // Handle search functionality here
+    console.log("Search query:", query);
   };
+
   return (
-    <div className="w-full">
-      <form onSubmit={handleSubmit}>
-        <fieldset className="w-full text-gray-800">
-          <label htmlFor="search" className="hidden">
-            Search
-          </label>
-          <div className="relative w-full sm:max-w-[400px] mx-auto border border-gray-800 rounded-md">
-            <span className="absolute inset-y-0 left-0 flex items-center pl-2">
-              <button
-                type="button"
-                title="search"
-                className="p-1 focus:outline-none focus:ring"
-              >
-                <FaSearch />
-              </button>
-            </span>
-            <input
-              type="search"
-              name="search"
-              placeholder="Search..."
-              className="w-full py-2 pl-10 text-sm rounded-md focus:outline-none text-gray-100 bg-[#edf5fe]"
-            />
-          </div>
-        </fieldset>
-      </form>
-    </div>
+    <form onSubmit={handleSubmit} className="flex items-center gap-2">
+      <input
+        type="text"
+        placeholder="Search"
+        value={query}
+        onChange={(e) => setQuery(e.target.value)}
+        className="px-3 py-2 rounded-md focus:outline-none focus:ring focus:border-blue-600 flex-1"
+      />
+      <button type="submit" className="px-4 py-2  text-white rounded-md">
+        <FaSearch />
+      </button>
+    </form>
   );
 }
