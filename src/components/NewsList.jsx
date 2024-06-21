@@ -15,4 +15,4 @@ const NewsList = ({ articles, error, isFetching, page, setPage }) => {
   );
 };
 
-export default NewsList;
+export default NewsList; 
