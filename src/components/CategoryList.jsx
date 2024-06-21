@@ -33,26 +33,24 @@ export default function CategoryList({
   };
 
   return (
-    <div
+    <div mt-18
       ref={containerRef}
       onMouseDown={handleMouseDown}
       onMouseUp={handleMouseUp}
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
-      className="categorylist flex gap-2 overflow-x-auto bg-gray-800 text-gray-300" // Dark background and text color
+      className="categorylist flex gap-2 overflow-x-auto bg-white text-gray-700 p-3 mt-16 fixed top-0 left-0 right-0 z-50" // Adjusted top margin to push it down below the fixed header
       style={{ cursor: isDragging ? "grabbing" : "grab" }}
     >
-      {category.map((category) => (
+      {category.map((cat) => (
         <button
-          key={category}
-          className={`px-2 py-1.5 rounded ${
-            selectedCategory === category
-              ? "bg-gray-400 text-white" // Maintain selected category styling
-              : ""
+          key={cat}
+          className={`px-2 py-2.5 rounded ${
+            selectedCategory === cat ? "bg-orange-400 text-white" : ""
           }`}
-          onClick={() => setSelectedCategory(category)}
+          onClick={() => setSelectedCategory(cat)}
         >
-          {category}
+          {cat}
         </button>
       ))}
     </div>
