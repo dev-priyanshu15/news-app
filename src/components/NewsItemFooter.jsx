@@ -6,7 +6,7 @@ import {
   LinkedinShareButton,
   FacebookIcon,
   TwitterIcon,
-  LinkedinIcon,
+  LinkedinIcon, 
 } from "react-share";
 
 export default function NewsItemFooter({
