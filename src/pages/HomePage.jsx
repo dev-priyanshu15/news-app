@@ -1,8 +1,7 @@
 import { useState, useEffect } from "react";
-
 import { useGetNewsListQuery } from "../features/news/newsApi";
-import CategoryList from "../components/CategoryList"; // Assuming CategoryList can handle dark background
-import NewsList from "../components/NewsList"; // Assuming NewsList can handle dark background
+import CategoryList from "../components/CategoryList"; // Assuming CategoryList can handle light background
+import NewsList from "../components/NewsList"; // Assuming NewsList can handle light background
 
 const HomePage = () => {
   const [page, setPage] = useState(1);
@@ -18,8 +17,11 @@ const HomePage = () => {
   }, [selectedCategory]);
 
   return (
-    <div className="bg-gray-800 text-black"> {/* Dark background and black text */}
-      <div className="pt-4 px-4">
+    <div
+      className="bg-white"
+      style={{ minHeight: "100vh" }}
+    >
+      <div className="pt-4 px-4 ">
         <CategoryList
           selectedCategory={selectedCategory}
           setSelectedCategory={setSelectedCategory}
