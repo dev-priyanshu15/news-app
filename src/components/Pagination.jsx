@@ -1,20 +1,24 @@
-// import React from "react";
+import React from "react";
 
 const Pagination = ({ page, setPage }) => {
   return (
-    <div className="flex justify-between mt-4 bg-gray-800"> {/* Dark background */}
+    <div
+      className="fixed bottom-0 left-0 right-0 flex justify-between p-2"
+      style={{ backgroundColor: "rgba(0, 0, 0, 0)", color: "#fff", zIndex: 10 }}
+    >
+      {/* Adjusted bottom positioning to overlap with the footer */}
       <button
         onClick={() => setPage((prev) => Math.max(prev - 1, 1))}
         disabled={page === 1}
-        className={`px-4 py-2 rounded text-white disabled:opacity-50 ${ // Adjust styles for disabled button
-          page === 1 ? "bg-gray-500" : "bg-blue-500"
+        className={`px-2 py-1 rounded text-white text-sm disabled:opacity-50 ${
+          page === 1 ? "bg-orange-500" : "bg-orange-500"
         }`}
       >
         Previous
       </button>
       <button
         onClick={() => setPage((prev) => prev + 1)}
-        className="px-4 py-2 rounded text-white bg-blue-500"
+        className="px-2 py-1 rounded text-white text-sm bg-orange-500"
       >
         Next
       </button>
@@ -23,4 +27,3 @@ const Pagination = ({ page, setPage }) => {
 };
 
 export default Pagination;
-
