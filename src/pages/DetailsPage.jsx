@@ -90,7 +90,7 @@ export default function DetailsPage() {
                 key={idx}
                 rel="noopener noreferrer"
                 to={`/search/${keyword}`}
-                className="px-3 py-1 rounded-sm hover:underline bg-blue-600 text-gray-50"
+                className="px-3 py-1 rounded-sm hover:underline bg-white text-gray-50"
               >
                 <span>#{keyword}</span>
               </Link>
