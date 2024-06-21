@@ -27,7 +27,7 @@ const BookmarkPage = () => {
               <li key={index} className="mb-4">
                 <Link
                   to={`/news/${encodeURIComponent(bookmark.url)}`}
-                  className="text-blue-500"
+                  className="text-gray-700"
                 >
                   {bookmark.title}
                 </Link>
