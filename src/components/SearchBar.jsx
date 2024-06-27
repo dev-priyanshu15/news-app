@@ -22,7 +22,7 @@ export default function SearchBar() {
         onChange={(e) => setQuery(e.target.value)}
         className="px-3 py-2 rounded-md focus:outline-none focus:ring focus:border-blue-600 flex-1"
       />
-      <button type="submit" className="px-4 py-2 bg-blue-600 text-white rounded-md">
+      <button type="submit" className="px-4 py-2 bg-blue-600 text-black rounded-md">
         <FaSearch />
       </button>
     </form>
