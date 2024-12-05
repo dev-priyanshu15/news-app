@@ -6,6 +6,13 @@ import Image from "./Image";
 import NewsItemHeader from "./NewsItemHeader";
 import NewsItemFooter from "./NewsItemFooter";
 
+/**
+ * Renders a news item component with bookmark functionality
+ * @param {Object} props - The component props
+ * @param {Object} props.article - The article object containing details like title, excerpt, thumbnail, etc.
+ * @param {number} props.index - The index of the article in the list
+ * @returns {JSX.Element} A React component representing a news item
+ */
 const NewsItem = ({ article, index }) => {
   const dispatch = useDispatch();
   const bookmarks = useSelector((state) => state.news.bookmarks);
