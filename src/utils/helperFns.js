@@ -1,3 +1,10 @@
+/**
+ * Formats a given time string based on its difference from the current time.
+ * If the time difference is more than 1 day, it returns the date in "MMM D, YYYY" format.
+ * Otherwise, it returns the time in "HH:MM AM/PM" format.
+ * @param {string} timeString - The time string to be formatted
+ * @returns {string} The formatted date or time string
+ */
 export function formatTime(timeString) {
   const now = new Date();
   const givenDate = new Date(timeString);
