@@ -9,6 +9,14 @@ import {
   LinkedinIcon, 
 } from "react-share";
 
+/**
+ * Renders the footer component for a news item, including author information and sharing options.
+ * @param {Object} props - The component props
+ * @param {Object} props.article - The article object containing information about the news item
+ * @param {function} props.handleBookmark - The function to handle bookmarking the article
+ * @param {boolean} props.isBookmarked - Indicates whether the article is currently bookmarked
+ * @returns {JSX.Element} A React component representing the footer of a news item
+ */
 export default function NewsItemFooter({
   article,
   handleBookmark,
