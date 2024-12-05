@@ -13,6 +13,11 @@ export const newsApi = createApi({
       return headers;
     },
   }),
+  /**
+   * Defines API endpoints for fetching and searching news articles
+   * @param {Object} builder - The API builder object
+   * @returns {Object} An object containing query endpoints for getting news list, searching news, and fetching news content
+   */
   endpoints: (builder) => ({
     getNewsList: builder.query({
       query: ({ page = 1, category = "General" }) =>
