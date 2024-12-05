@@ -1,5 +1,12 @@
 import React from "react";
 
+/**
+ * Renders a pagination component with 'Previous' and 'Next' buttons
+ * @param {Object} props - The component props
+ * @param {number} props.page - The current page number
+ * @param {function} props.setPage - Function to update the page number
+ * @returns {JSX.Element} A div containing two buttons for pagination control
+ */
 const Pagination = ({ page, setPage }) => {
   return (
     <div

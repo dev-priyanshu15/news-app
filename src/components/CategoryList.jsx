@@ -1,6 +1,13 @@
 import { useRef, useState } from "react";
 import { category } from "../utils/constants";
 
+/**
+ * Renders a horizontally scrollable list of category buttons with drag-to-scroll functionality.
+ * @param {Object} props - The component props.
+ * @param {string} props.selectedCategory - The currently selected category.
+ * @param {function} props.setSelectedCategory - Function to update the selected category.
+ * @returns {JSX.Element} A div containing a list of category buttons.
+ */
 export default function CategoryList({
   selectedCategory,
   setSelectedCategory,

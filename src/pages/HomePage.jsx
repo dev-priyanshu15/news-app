@@ -3,6 +3,10 @@ import { useGetNewsListQuery } from "../features/news/newsApi";
 import CategoryList from "../components/CategoryList"; // Assuming CategoryList can handle light background
 import NewsList from "../components/NewsList"; // Assuming NewsList can handle light background
 
+/**
+ * Renders the home page component with news articles and category selection
+ * @returns {JSX.Element} The rendered HomePage component
+ */
 const HomePage = () => {
   const [page, setPage] = useState(1);
   const [selectedCategory, setSelectedCategory] = useState("General");

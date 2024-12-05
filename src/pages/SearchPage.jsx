@@ -4,6 +4,11 @@ import { useParams } from "react-router-dom";
 import { useSearchNewsQuery } from "../features/news/newsApi";
 import NewsList from "../components/NewsList";
 
+/**
+ * Renders a search page component that displays news articles based on search keywords
+ * @param {void} No parameters
+ * @returns {JSX.Element} A React component that renders the search results page
+ */
 const SearchPage = () => {
   const [page, setPage] = useState(1);
   let { keywords } = useParams();
