@@ -5,6 +5,12 @@ import useFetchNews from "../hooks/useFetchNews";
 import Image from "../components/Image";
 import { formatTime } from "../utils/helperFns";
 
+/**
+ * Renders a detailed page for a news article
+ * @returns {JSX.Element} A React component that displays the full content of a news article,
+ *                        including title, author(s), publisher information, publish date,
+ *                        article content, and related keywords
+ */
 export default function DetailsPage() {
   const { encodedUrl } = useParams();
   const url = decodeURIComponent(encodedUrl);
