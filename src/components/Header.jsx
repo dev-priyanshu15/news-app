@@ -42,7 +42,7 @@ export default function Header() {
               <button
                 type="button"
                 onClick={() => navigate("/bookmarks")}
-                className="px-4 py-2 font-semibold rounded-full bg-green-600 text-grey-900 max-sm:bg-transparent max-sm:text-black max-sm:p-3"
+                className="px-4 py-2 font-semibold rounded-full bg-green-600 text-grey-100 max-sm:bg-transparent max-sm:text-black max-sm:p-3"
               >
                 <span className="max-sm:hidden">Bookmark</span>
                 <span className="sm:hidden">
