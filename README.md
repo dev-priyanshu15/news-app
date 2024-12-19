@@ -24,16 +24,58 @@ A modern React-based news application that provides a clean interface for browsi
 ## Project Structure
 
 ```
-src/
-├── app/
-│   └── store.js           # Redux store configuration
-├── components/            # Reusable UI components
-├── features/
-│   └── news/             # News-related redux slice and API
-├── hooks/                # Custom React hooks
-├── layouts/              # Layout components
-├── pages/                # Main application pages
-└── utils/                # Helper functions and constants
+Project Name: HaalSamachar
+├── .github/
+│   └── (GitHub-specific configuration files)
+├── public/
+│   └── vite.svg
+├── src/
+│   ├── app/
+│   │   └── store.js
+│   ├── assets/
+│   │   └── react.svg
+│   ├── components/
+│   │   ├── CategoryList.jsx
+│   │   ├── Footer.jsx
+│   │   ├── Header.jsx
+│   │   ├── Image.jsx
+│   │   ├── NewsItem.jsx
+│   │   ├── NewsItemFooter.jsx
+│   │   ├── NewsItemHeader.jsx
+│   │   ├── NewsList.jsx
+│   │   ├── Pagination.jsx
+│   │   └── SearchBar.jsx
+│   ├── features/
+│   │   └── news/
+│   │       ├── newsApi.js
+│   │       └── newsSlice.js
+│   ├── hooks/
+│   │   └── useFetchNews.js
+│   ├── layouts/
+│   │   └── AppLayout.jsx
+│   ├── pages/
+│   │   ├── BookmarkPage.jsx
+│   │   ├── DetailsPage.jsx
+│   │   ├── HomePage.jsx
+│   │   ├── SearchPage.jsx
+│   │   └── index.js
+│   ├── utils/
+│   │   └── (Utility functions or helper files, if any)
+│   ├── App.jsx
+│   ├── index.css
+│   ├── main.jsx
+│   └── index.html
+├── .eslintrc.cjs
+├── .gitignore
+├── README.md
+├── index.html
+├── package-lock.json
+├── package.json
+├── postcss.config.js
+├── tailwind.config.js
+├── vercel.json
+└── vite.config.js
+
 ```
 
 ## **Screenshots**
