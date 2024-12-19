@@ -25,7 +25,7 @@ export default function Header() {
           </div>
         ) : (
           <>
-            <Link to="/" className="text-2xl sm:text-3xl font-bold text-black">
+            <Link to="/" className="text-2xl sm:text-3xl font-bold text-white">
               HaalSamachar
             </Link>
             <div className="flex-1 max-sm:hidden">
