@@ -26,7 +26,7 @@ export default function Header() {
         ) : (
           <>
             <Link to="/" className="text-2xl sm:text-3xl font-bold text-white">
-              NeighborGood
+              HaalSamachar
             </Link>
             <div className="flex-1 max-sm:hidden">
               <SearchBar />
