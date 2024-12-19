@@ -50,7 +50,8 @@ export default function SearchBar() {
         placeholder="Search"
         value={query}
         onChange={(e) => setQuery(e.target.value)}
-        className="px-3 py-2 rounded-md focus:outline-none focus:ring focus:border-blue-600 flex-1 text-black" // Added text-black
+        className="px-3 py-2 rounded-md focus:outline-none focus:ring focus:border-blue-600 flex-1 text-black bg-white" // Ensure text-black and bg-white
+        style={{ color: "black" }} // Inline style fallback for ensuring visibility
       />
       <button type="submit" className="px-4 py-2 bg-blue-600 text-white rounded-md">
         <FaSearch />
